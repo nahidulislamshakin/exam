@@ -1,4 +1,4 @@
-import 'package:exam/exam.dart';
+import 'package:exam/main_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {

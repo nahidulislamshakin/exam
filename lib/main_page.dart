@@ -140,31 +140,31 @@ class _ExamState extends State<Exam> {
                 FloatingActionButton(
                   onPressed: () {
                     setState(() {
-                      floatvalue++;
+                      floatvalue--;
                     });
                   },
-                  child: Icon(Icons.add),
+                  child: Icon(Icons.remove),
                 ),
                 SizedBox(
-                  width: 10,
+                  width: 30,
                 ),
                 Text(
-                  '$floatvalue',
+                  '${floatvalue.round()}',
                   style: TextStyle(
                       fontSize: 50,
                       fontWeight: FontWeight.bold,
                       color: Colors.white),
                 ),
                 SizedBox(
-                  width: 10,
+                  width: 30,
                 ),
                 FloatingActionButton(
                   onPressed: () {
                     setState(() {
-                      floatvalue--;
+                      floatvalue++;
                     });
                   },
-                  child: Icon(Icons.remove),
+                  child: Icon(Icons.add),
                 )
               ],
             ),
